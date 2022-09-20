@@ -7,8 +7,9 @@ terraform {
   }
 }
 
-provider "azurerm" {
-  features {}
+provider "azuread" {
+  use_msi   = true
+  tenant_id = "78cb775e-216f-42a1-bed5-5b0d5f2b7ef5"
 }
 
 # Create a resource group if it doesn't exist
