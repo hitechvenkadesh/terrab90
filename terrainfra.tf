@@ -8,6 +8,7 @@ terraform {
 }
 
 provider "azuread" {
+  features {}
   use_msi   = true
   tenant_id = "78cb775e-216f-42a1-bed5-5b0d5f2b7ef5"
 }
