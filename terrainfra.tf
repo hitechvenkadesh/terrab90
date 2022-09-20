@@ -9,7 +9,6 @@ terraform {
 
 provider "azurerm" {
   features {}
-  use_msi = true
 }
 
 # Create a resource group if it doesn't exist
