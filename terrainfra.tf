@@ -7,9 +7,11 @@ terraform {
   }
 }
 
-provider "azuread" {
+provider "azurerm" {
   features {}
   use_msi   = true
+  client_id = "6db5b504-36d6-4138-9196-2ab84130194b"
+  subscription_id = "6599ea5b-1714-4776-9398-81a0c87c25c3"
   tenant_id = "78cb775e-216f-42a1-bed5-5b0d5f2b7ef5"
 }
 
